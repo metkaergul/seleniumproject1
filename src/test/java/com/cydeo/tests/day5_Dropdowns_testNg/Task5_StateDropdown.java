@@ -1,6 +1,6 @@
 package com.cydeo.tests.day5_Dropdowns_testNg;
 
-import com.cydeo.tests.Utilities;
+import com.cydeo.tests.Utility.Utilities;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

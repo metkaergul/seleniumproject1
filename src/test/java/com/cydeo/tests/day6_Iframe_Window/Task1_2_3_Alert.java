@@ -1,6 +1,6 @@
 package com.cydeo.tests.day6_Iframe_Window;
 
-import com.cydeo.tests.Utilities;
+import com.cydeo.tests.Utility.Utilities;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;

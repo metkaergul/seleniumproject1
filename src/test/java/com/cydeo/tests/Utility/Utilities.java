@@ -1,4 +1,4 @@
-package com.cydeo.tests;
+package com.cydeo.tests.Utility;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
@@ -22,8 +22,10 @@ public class Utilities {
         // -if "firefox" passed  -->it will open firefox browser
         //Return type : WebDriver*/
         if (browserType.equalsIgnoreCase("chrome")) {
+            WebDriverManager.chromedriver().setup();
             return new ChromeDriver();
         } else if (browserType.equalsIgnoreCase("firefox")) {
+            WebDriverManager.firefoxdriver().setup();
             return new FirefoxDriver();
         } else {
             return null;
