@@ -1,23 +1,25 @@
 package com.cydeo.base;
 
-import com.cydeo.tests.Utility.Utilities;
+import com.cydeo.tests.Utility.DriverUtility;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.BeforeClass;
-
-import java.util.concurrent.TimeUnit;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 public class TestBase {
 
 
    public  WebDriver driver;
-    @BeforeClass
+    @BeforeMethod
     public void setupMethod(){
 
         WebDriverManager.chromedriver().setup();
-        driver = Utilities.getDriver("chrome");
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver = DriverUtility.getDriver();
+
+    }
+    @AfterMethod
+    public void tearDown(){
+        DriverUtility.closeDriver();
 
     }
 

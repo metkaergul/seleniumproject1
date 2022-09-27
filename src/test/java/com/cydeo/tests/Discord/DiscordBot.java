@@ -76,19 +76,19 @@ public class DiscordBot {
 
         }
 
-//
-//        @Test
-//        public void group2_3_attack(){
-//            DiscordHomepage discordHomepage=new DiscordHomepage();
-//        discordHomepage.CydeoBatch.click();
-//        discordHomepage.part2_group3.click();
-//
-//            for (int i = 0; i <10 ; i++) {
-//
-//                discordHomepage.group3MessageBox.sendKeys("Hi this is group 3 alien bot winter is coming go and get find a shelter yourself"+ Keys.ENTER);
-//            }
-//
-//        }
+
+        @Test
+        public void group2_3_attack(){
+            DiscordHomepage discordHomepage=new DiscordHomepage();
+        discordHomepage.CydeoBatch.click();
+        discordHomepage.part2_group3.click();
+
+            for (int i = 0; i <10 ; i++) {
+
+                discordHomepage.group3MessageBox.sendKeys("Hi this is group 3 alien bot winter is coming go and get find a shelter yourself"+ Keys.ENTER);
+            }
+
+        }
 
     }
 
